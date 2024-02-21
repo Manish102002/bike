@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { ThreeDots } from 'react-loader-spinner';
 import Hero from '../Hero';
+import loder from '/public/images/preloader.jpg';
 
 export const Loader = () => {
 
@@ -22,9 +23,9 @@ export const Loader = () => {
       {
         loader ? (
           <>
-            {/* <div className=' bg-black  h-screen w-screen flex justify-center flex-col items-center  '>
+            <div className=' bg-black  h-screen w-screen flex justify-center flex-col items-center  '>
               <div className=' translate-y-7'>
-                <img src="/public/images/preloader.jpg" className=' rounded-[100%] w-24 animate-spin duration-50 ' alt="" />
+                <img src={loder} className=' rounded-[100%] w-24 animate-spin duration-50 ' alt="" />
               </div>
               render(<ThreeDots
                 visible={true}
@@ -36,7 +37,7 @@ export const Loader = () => {
                 wrapperStyle={{}}
                 wrapperClass=""
               />)
-            </div> */}
+            </div>
 
 
           </>
