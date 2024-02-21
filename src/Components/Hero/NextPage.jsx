@@ -58,7 +58,7 @@ const NextPage = () => {
 
                 <div className="min-w-[60vw] min-h-[100vh] flex items-center flex-wrap md:flex md:flex-wrap md:justify-center md:items-center lg:flex lg:justify-start  bg-black">
 
-                <img src="/public/1.png" className=" md:w-[600px] sm:w-[600px] w-[700px] block md:block sm:block lg:hidden rotate-[0deg]" alt="" />
+                <img src={img1} className=" md:w-[600px] sm:w-[600px] w-[700px] block md:block sm:block lg:hidden rotate-[0deg]" alt="" />
 
                     <div className=" about2 lg:w-[40vw] md:[500px] sm:[500px] px-6 lg:ml-32 flex justify-center  flex-col gap-6  text-white">
                         <h1 className="font-bold text-darkYellow text-2xl">About Product</h1>
