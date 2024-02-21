@@ -11,11 +11,11 @@ const ProductPage = () => {
   const [products, setProducts] = useState([]);
   const [cartItems, setCartItems] = useState([]);
   // const [cartItems, setCartItems] = useState([]);
-    const [itemCount, setItemCount] = useState(0);
+  const [itemCount, setItemCount] = useState(0);
 
 
-    function itemCountHandle() {
-      setItemCount(cartItems.length);
+  function itemCountHandle() {
+    setItemCount(cartItems.length);
   }
 
   useEffect(() => {
@@ -42,28 +42,28 @@ const ProductPage = () => {
       const updatedCart = cartItems.filter((item) => item.id !== productId);
       setCartItems(updatedCart);
       setItemCount(updatedCart.length);
-      
-  } else {
+
+    } else {
       // If the item is not in the cart, add it
       const productToAdd = products.find((product) => product.id === productId);
       setCartItems([...cartItems, productToAdd]);
 
       setItemCount(cartItems.length + 1);
-  }
+    }
   };
 
-  
+
 
 
 
 
   return (
     <>
-    <Navi itemCount={itemCount} setCartItems={setCartItems}/>
+      <Navi itemCount={itemCount} setCartItems={setCartItems} />
 
-    
+
       <section className=" w-full h-full bg-darkBlack">
-      {/* <CartBut text="Add to Cart" setCartItems={setCartItems} itemCount={itemCount} /> */}
+        {/* <CartBut text="Add to Cart" setCartItems={setCartItems} itemCount={itemCount} /> */}
         <div >
           <h1 className=" text-darkYellow text-center pt-5 text-4xl font-bold">Products</h1>
 
@@ -105,12 +105,12 @@ const ProductPage = () => {
           </div>
 
 
-          <Link to="/fullproduct"> <div className=" text-center mt-8">
+          <div className=" text-center mt-8">
             <button className='px-5 py-2  hover:bg-darkYellow hover:text-black border-darkYellow text-white border transition ease-linear duration-300 mb-8  font-bold bg-black  '>View All Products</button>
-          </div></Link>
+          </div>
         </div>
       </section>
-      <Footer/>
+      <Footer />
     </>
   )
 }
