@@ -4,7 +4,9 @@ import { useState } from "react";
 import Delivery from "../Payments/Delivery";
 import React, { useEffect } from 'react';
 import ScrollReveal from 'scrollreveal';
-
+import cartimg11 from '/public/img1.jpg';
+import cartimg2 from '/public/img2.jpg';
+import cartimg3 from '/public/img3.jpg';
 
 const Cart = () => {
 
@@ -21,7 +23,7 @@ const Cart = () => {
     const cart = [
         {
             id: 1,
-            img: '/public/img1.jpg',
+            img: cartimg11,
             name: 'basic Tee',
             color: 'black',
             prize: 240,
@@ -29,7 +31,7 @@ const Cart = () => {
         },
         {
             id: 2,
-            img: '/public/img2.jpg',
+            img: cartimg2,
             name: 'basic Tee',
             color: 'white',
             prize: 340,
@@ -37,7 +39,7 @@ const Cart = () => {
         },
         {
             id: 3,
-            img: '/public/img3.jpg',
+            img: cartimg3,
             name: 'tee',
             color: 'brown',
             prize: 290,

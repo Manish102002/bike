@@ -1,6 +1,7 @@
 import Navi from "../Header/Navi"
 import React, { useEffect } from 'react';
 import ScrollReveal from 'scrollreveal';
+import cartimg1 from '/public/img1.jpg';
 
 const Profile = () => {
 
@@ -43,7 +44,7 @@ const Profile = () => {
       <Navi />
       <div className=" h-[570px] min-h-full bg-black text-white flex flex-col pt-10 items-center">
         <div>
-          <img src="/public/img1.jpg" alt="" className="nametop w-32 border-black border rounded-[50%]" />
+          <img src={cartimg1} alt="" className="nametop w-32 border-black border rounded-[50%]" />
         </div>
         <div className=" w-90vw">
           <div className=" flex flex-wrap justify-center items-center gap-x-12">
