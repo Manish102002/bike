@@ -31,7 +31,7 @@ const Navi = ({ text, itemCount, setCartItems, }) => {
 
 
                 <div>
-                    <img src="/public/images/preloader.jpg" alt="" className="heading w-10 rounded-[50%]" />
+                    <img src="https://i.ibb.co/GPRRj3V/preloader.jpg" alt="" className="heading w-10 rounded-[50%]" />
                 </div>
 
                 <Link to="/" className=" lg:translate-x-28 translate-x-5  md:hidden lg:block sm:block block">
