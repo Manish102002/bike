@@ -3,25 +3,41 @@ import React from 'react';
 import { ReactImageTurntable } from 'react-image-turntable';
 // import  { useEffect } from 'react';
 // import ScrollReveal from 'scrollreveal';
+import circle1 from '/public/bikes/1.png';
+import circle2 from '/public/bikes/2.png';
+import circle3 from '/public/bikes/3.png';
+import circle4 from '/public/bikes/4.png';
+import circle5 from '/public/bikes/5.png';
+import circle6 from '/public/bikes/6.png';
+import circle7 from '/public/bikes/7.png';
+import circle8 from '/public/bikes/8.png';
+import circle9 from '/public/bikes/9.png';
+import circle10 from '/public/bikes/10.png';
+import circle11 from '/public/bikes/11.png';
+import circle12 from '/public/bikes/12.png';
+import circle13 from '/public/bikes/13.png';
+import circle14 from '/public/bikes/14.png';
+import circle15 from '/public/bikes/15.png';
+import circle16 from '/public/bikes/16.png';
 
 const images = [
-    '/public/bikes/1.png',
-    '/public/bikes/2.png',
-    '/public/bikes/3.png',
-    '/public/bikes/4.png',
-    '/public/bikes/5.png',
-    '/public/bikes/6.png',
-    '/public/bikes/7.png',
-    '/public/bikes/8.png',
-    '/public/bikes/9.png',
-    '/public/bikes/10.png',
-    '/public/bikes/11.png',
-    '/public/bikes/12.png',
-    '/public/bikes/13.png',
-    '/public/bikes/14.png',
-    '/public/bikes/15.png',
-    '/public/bikes/16.png',
-  
+    circle1,
+    circle2,
+    circle3,
+    circle4,
+    circle5,
+    circle6,
+    circle7,
+    circle8,
+    circle9,
+    circle10,
+    circle11,
+    circle12,
+    circle13,
+    circle14,
+    circle15,
+    circle16,
+   
 ];
 
 // useEffect(()=>{
