@@ -1,6 +1,7 @@
 import React, { startTransition, useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import img1 from '/public/1.png'
 // import { Triangle } from "react-loader-spinner";
 
 const NextPage = () => {
@@ -35,9 +36,9 @@ const NextPage = () => {
             <div className=" lg:two min-w-full overflow-hidden" ref={twoRef}  >
                 <div className="bg-black flex lg:flex lg:justify-center lg:items-center md:flex sm:flex-wrap flex-wrap md:flex-wrap sm:flex text-white min-h-[90vh] justify-center px-6 items-center">
                     <div className="bg-black " >
-                    <img src="/public/1.png" className=" md:w-[600px] sm:w-[600px] w-[700px] block md:block sm:block lg:hidden rotate-[0deg]" alt="" />
+                    <img src={img1} className=" md:w-[600px] sm:w-[600px] w-[700px] block md:block sm:block lg:hidden rotate-[0deg]" alt="" />
                         <div className="box2 " ref={box2Ref} >
-                            <img src="/public/1.png" className=" bike hidden lg:block  w-[700px] rotate-[25deg]" alt="" />
+                            <img src={img1} className=" bike hidden lg:block  w-[700px] rotate-[25deg]" alt="" />
                            
                         </div>
                     </div>
