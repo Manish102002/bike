@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import ESwiper from "./ESwiper"
-
+import epng from "/public/1.png";
 
 
 const EPage3 = () => {
@@ -11,7 +11,7 @@ const EPage3 = () => {
                 <div className=" flex mt-6">
                     <div>
                         <div className="">
-                            <img src="/public/1.png" alt="" className=" w-[700px]" />
+                            <img src={epng} alt="" className=" w-[700px]" />
                             <h3></h3>
                         </div>
                     </div>

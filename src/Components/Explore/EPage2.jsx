@@ -1,7 +1,7 @@
 // import React, { useEffect, useRef } from "react";
 import React, { useEffect } from 'react';
 import ScrollReveal from 'scrollreveal';
-
+import eimg from '/public/Eimages/img1.jpg';
 
 const EPage2 = () => {
 
@@ -60,7 +60,7 @@ const EPage2 = () => {
 
     return (
         <>
-            <div className="textBox text-lightYellow overflow-hidden bg-cover h-[90vh] flex pt-20 items-center gap-6 flex-col lg:text-3xl md:text-3xl sm:text-lg pb-2 w-max-[100vw] " style={{ backgroundImage: 'url(/public/Eimages/img1.jpg)' }}>
+            <div className="textBox text-lightYellow overflow-hidden bg-cover h-[90vh] flex pt-20 items-center gap-6 flex-col lg:text-3xl md:text-3xl sm:text-lg pb-2 w-max-[100vw] " style={{ backgroundImage: `url(${eimg})` }}>
                 <h1 className="text2">A CENTURY OF PURE MOTORCYCLING DNA COLLIDED</h1>
                 <h1 className="text3">WITH THE ANARCHIC SPIRIT OF CUSTOM CULTURE</h1>
                 <h1 className="text4">AND A SHAPESHIFTING MUTANT WAS BORN</h1>
