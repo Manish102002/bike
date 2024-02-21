@@ -2,6 +2,7 @@ import { Link } from "react-router-dom"
 import Navi from "../Header/Navi"
 import React, { useEffect } from 'react';
 import ScrollReveal from 'scrollreveal';
+import bgimg1 from '/public/images/bg.avif';
 
 const Register = () => {
 
@@ -48,7 +49,7 @@ const Register = () => {
     return (
         <>
             <Navi />
-            <div className=" bg-cover h-[88.5vh] pb-2 w-full gap-3 flex items-center flex-col text-white" style={{ backgroundImage: 'url(/public/images/bg.avif)' }}>
+            <div className=" bg-cover h-[88.5vh] pb-2 w-full gap-3 flex items-center flex-col text-white" style={{ backgroundImage:`url(${bgimg1})` }}>
 
                 <h1 className="login font-bold my-6 text-darkYellow   text-2xl">
                     Create your account

@@ -8,6 +8,7 @@ import cartimg11 from '/public/img1.jpg';
 import cartimg2 from '/public/img2.jpg';
 import cartimg3 from '/public/img3.jpg';
 
+
 const Cart = () => {
 
     const [open, setOpen] = useState(false);
