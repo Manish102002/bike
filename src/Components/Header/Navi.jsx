@@ -1,4 +1,4 @@
-import { useEffect, useState , useRef } from "react"
+import { useEffect, useState, useRef } from "react"
 import { CgProfile } from "react-icons/cg";
 import { Link } from "react-router-dom";
 import { createBrowserRouter, NavLink, RouterProvider } from "react-router-dom";
@@ -20,25 +20,25 @@ const Navi = ({ text, itemCount, setCartItems, }) => {
     const handleClick = () => {
         setIsOpen(!isOpen);
     }
-  
- 
-  
+
+
+
 
     return (
         <>
             <div style={{ fontFamily: 'Bebas Neue, sans-serif' }} className=" flex z-50 text-center items-center justify-between lg:px-12 md:px-10  px-6  sm:px-10  text-textColor sticky top-0  bg-darkBlack h-[72px]
             shadow-lg transition duration-200 ease-in shadow-white/50  ">
 
-
-                <div>
-                    <img src="https://i.ibb.co/GPRRj3V/preloader.jpg" alt="" className="heading w-10 rounded-[50%]" />
-                </div>
-
-                <Link to="/" className=" lg:translate-x-28 translate-x-5  md:hidden lg:block sm:block block">
+                <Link to="/">
+                    <div>
+                        <img src="https://i.ibb.co/GPRRj3V/preloader.jpg" alt="" className="heading w-10 rounded-[50%]" />
+                    </div>
+                </Link>
+                <div className=" lg:translate-x-28 translate-x-5  md:hidden lg:block sm:block block">
                     <div >
                         <h1 className=" heading head font-bold text-[20px]  text-darkYellow  lg:text-[30px] md:text-[25px] sm:text-[20px]">Beni Automotives</h1>
                     </div>
-                </Link>
+                </div>
 
                 <div className="flex gap-4">
 
