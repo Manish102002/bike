@@ -93,16 +93,16 @@ const Hero = () => {
       origin: 'right',
       reset: true,
       distance: '300px',
-      duration: 3000,
-      delay: 500,
+      duration: 1500,
+      delay: 100,
     })
 
     ScrollReveal().reveal(".about2", {
       origin: 'left',
       reset: true,
       distance: '300px',
-      duration: 3000,
-      delay: 500,
+      duration: 1500,
+      delay: 100,
     })
 
     const timeout = setTimeout(() => {

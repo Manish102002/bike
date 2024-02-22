@@ -13,7 +13,7 @@ const Register = () => {
                 reset: true,
                 distance: '80px',
                 duration: 2000,
-                delay: 500,
+                delay: 100,
             });
 
             ScrollReveal().reveal(".left", {
@@ -21,7 +21,7 @@ const Register = () => {
                 reset: true,
                 distance: '80px',
                 duration: 2000,
-                delay: 500,
+                delay: 100,
             });
 
             ScrollReveal().reveal(".right", {
@@ -29,7 +29,7 @@ const Register = () => {
                 reset: true,
                 distance: '80px',
                 duration: 2000,
-                delay: 500,
+                delay: 100,
             });
 
 
@@ -38,7 +38,7 @@ const Register = () => {
                 reset: true,
                 distance: '180px',
                 duration: 2000,
-                delay: 500,
+                delay: 100,
             });
         }, 0);
 
@@ -49,7 +49,7 @@ const Register = () => {
     return (
         <>
             <Navi />
-            <div className=" bg-cover h-[88.5vh] pb-2 w-full gap-3 flex items-center flex-col text-white" style={{ backgroundImage:`url(${bgimg1})` }}>
+            <div className=" bg-cover h-[88.9vh] pb-2 w-full gap-3 flex items-center flex-col text-white" style={{ backgroundImage:`url(${bgimg1})` }}>
 
                 <h1 className="login font-bold my-6 text-darkYellow   text-2xl">
                     Create your account

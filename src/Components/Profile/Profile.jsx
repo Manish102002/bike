@@ -11,25 +11,25 @@ const Profile = () => {
       ScrollReveal().reveal(".nametop", {
         origin: 'top',
         reset: true,
-        distance: '500px',
-        duration: 3000,
-        delay: 500,
+        distance: '80px',
+        duration: 2000,
+        delay: 100,
       });
   
       ScrollReveal().reveal(".nameleft", {
         origin: 'left',
         reset: true,
-        distance: '1000px',
-        duration: 3000,
-        delay: 600,
+        distance: '80px',
+        duration: 2000,
+        delay: 100,
       });
   
       ScrollReveal().reveal(".nameright", {
         origin: 'right',
         reset: true,
-        distance: '1000px',
-        duration: 3000,
-        delay: 700,
+        distance: '80px',
+        duration: 2000,
+        delay: 100,
       });
   
       return () => clearTimeout(timeout);
@@ -42,7 +42,7 @@ const Profile = () => {
   return (
     <>
       <Navi />
-      <div className=" h-[570px] min-h-full bg-black text-white flex flex-col pt-10 items-center">
+      <div className=" h-[578px] min-h-full bg-black text-white flex flex-col pt-10 items-center">
         <div>
           <img src={cartimg1} alt="" className="nametop w-32 border-black border rounded-[50%]" />
         </div>

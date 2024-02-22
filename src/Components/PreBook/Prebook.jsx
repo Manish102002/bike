@@ -76,7 +76,7 @@ const Prebook = () => {
         <>
             <Navi />
 
-            <div className=" flex justify-center flex-wrap items-center  bg-black">
+            <div className=" flex justify-center flex-wrap items-center   bg-black">
 
                 <div className="img w-[600px] " >
                     {/* <img src="/public/1.png" alt="" /> */}
@@ -84,7 +84,7 @@ const Prebook = () => {
                     <h3></h3>
                 </div>
 
-                <div className="pre bg-black text-white flex flex-col flex-wrap justify-center items-center">
+                <div className="pre bg-black text-white flex flex-col flex-wrap justify-center pb-8 items-center">
                     <h1 className="prebook pt-10 text-3xl text-darkYellow font-semibold space-x-8">PRE-BOOK YOUR TEXT RIDE</h1>
                     <div className=" flex flex-wrap justify-center items-center  gap-7 mt-10">
                         <div className="">

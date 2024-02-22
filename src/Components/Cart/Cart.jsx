@@ -52,25 +52,25 @@ const Cart = () => {
         ScrollReveal().reveal(".shop", {
           origin: 'top',
           reset: true,
-          distance: '500px',
-          duration: 3000,
-          delay: 500,
+          distance: '80px',
+          duration: 2000,
+          delay: 100,
         });
   
         ScrollReveal().reveal(".cart1", {
           origin: 'left',
           reset: true,
-          distance: '1000px',
-          duration: 3000,
-          delay: 600,
+          distance: '80px',
+          duration: 2000,
+          delay: 100,
         });
   
         ScrollReveal().reveal(".cart2", {
           origin: 'right',
           reset: true,
-          distance: '1000px',
-          duration: 3000,
-          delay: 700,
+          distance: '80px',
+          duration: 2000,
+          delay: 100,
         });
   
         return () => clearTimeout(timeout);
