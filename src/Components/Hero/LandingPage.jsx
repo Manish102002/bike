@@ -8,9 +8,17 @@ import bikeV from '/public/vedio/vedio.mp4'
 // import { Power0 } from "gsap-trial/all";
 // import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-
-
 const LandingPage = () => {
+
+    useEffect(() => {
+        gsap.to(".landing", {
+            opacity: 1,
+            x:100,
+            duration: 1, // animation duration in seconds
+            delay: 1, // delay before the animation starts in seconds
+            ease: "power2.out" // easing function
+        });
+    }, []);
    
     return (
         <>
@@ -23,7 +31,7 @@ const LandingPage = () => {
                    
                 </div>
 
-                <div className=" landing lg:ml-20 md:ml-20 sm:ml-16 ml-12 -translate-y-[400px] absolute text-white z-0">
+                <div className=" landing opacity-0 lg:ml-20 md:ml-20 sm:ml-16 ml-12 -translate-y-[400px] absolute text-white z-0">
                         <h1 className=" font-semibold  text-5xl mb-2" >Shotgun 650</h1>
                         <h6 className=" font-thin mb-4">Inspired by custom. For custom.</h6>
                        <Link to="/explore">

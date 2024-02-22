@@ -105,17 +105,17 @@ const Hero = () => {
       delay: 100,
     })
 
-    const timeout = setTimeout(() => {
-      ScrollReveal().reveal(".landing", {
-        origin: 'left',
-        // reset: true,
-        distance: '300px',
-        duration: 3000,
-        delay: 500,
-      });
-    }, 0);
+    // const timeout = setTimeout(() => {
+    //   ScrollReveal().reveal(".landing", {
+    //     origin: 'top',
+    //     reset: true,
+    //     distance: '80px',
+    //     duration: 1000,
+    //     delay: 100,
+    //   });
+    // }, 0);
 
-    return () => clearTimeout(timeout);
+    // return () => clearTimeout(timeout);
 
   }, []);
 
