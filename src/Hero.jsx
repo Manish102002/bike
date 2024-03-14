@@ -19,6 +19,8 @@ import LocomotiveScroll from 'locomotive-scroll';
 
 import React, { useEffect } from 'react';
 import ScrollReveal from 'scrollreveal';
+import ForgotPassword from "./Components/Login/ForgotPassword.jsx";
+import ResetPassword from "./Components/Login/ResetPassword.jsx";
 
 const router = createBrowserRouter([
   {
@@ -51,15 +53,19 @@ const router = createBrowserRouter([
     element: <Login />,
   },
   {
-    path: "/login",
-    element: <Login />
+    path: "/password/forgot",
+    element: <ForgotPassword />
   },
   {
-    path: "/Explore",
+    path: "/password/reset/:token",
+    element: <ResetPassword />
+  },
+  {
+    path: "/Explore/:productId",
     element: <EPage1 />
   },
   {
-    path: "/prebook",
+    path: "/prebook/:productId",
     element: <PreBook />
   },
   {

@@ -13,11 +13,13 @@ const Delivery = ({ onClick, hide }) => {
             <div className="flex flex-wrap mt-5 gap-x-7 gap-y-2 justify-center">
               <div className="border px-5 w-full md:w-72">
                 <h2>Name</h2>
-                <input type="text" className="w-full h-8 outline-none bg-transparent" />
+                <input  title="Enter your Name"
+                  pattern="[6-9][0-9]{9}" type="text" className="w-full h-8 outline-none bg-transparent" />
               </div>
               <div className="border px-5 w-full md:w-72">
                 <h2>Mobile No.</h2>
-                <input type="text" className="w-full h-8 outline-none bg-transparent" />
+                <input  title="Enter your mobile number"
+                  pattern="[6-9][0-9]{9}" type="text" className="w-full h-8 outline-none bg-transparent" />
               </div>
             </div>
 

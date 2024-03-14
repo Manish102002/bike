@@ -1,5 +1,5 @@
 // import PageOne from "./PageOne"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import Footer from "../Footer/Footer"
 import NextPage from "./NextPage"
 import React, { useEffect, useRef } from "react";
@@ -9,6 +9,11 @@ import bikeV from '/public/vedio/vedio.mp4'
 // import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const LandingPage = () => {
+const navigate = useNavigate();
+const productId  = "65ef6bad271503e62838c032";
+    const handleNavigate=()=>{
+        navigate(`/explore/${productId}`)
+      }
 
     useEffect(() => {
         gsap.to(".landing", {
@@ -34,7 +39,7 @@ const LandingPage = () => {
                 <div className=" landing opacity-0 lg:ml-20 md:ml-20 sm:ml-16 ml-12 -translate-y-[400px] absolute text-white z-0">
                     <h1 className=" font-semibold  text-5xl mb-2" >Shotgun 650</h1>
                     <h6 className=" font-thin mb-4">Inspired by custom. For custom.</h6>
-                    <Link to="/explore">
+                    <Link className = {handleNavigate()}>
                         <button className=" text-md font-none py-2 bg-darkYellow hover:shadow-darkYellow shadow-md hover:bg-lightYellow transition duration-200 ease-in  rounded-[2rem] text-black px-6">Explore</button>
                         {/* <button
                             class="overflow-hidden relative w-32 p-2 h-12 bg-black text-white border-none rounded-md text-xl font-bold cursor-pointer relative z-10 group"

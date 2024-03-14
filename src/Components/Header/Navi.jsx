@@ -3,13 +3,16 @@ import { CgProfile } from "react-icons/cg";
 import { Link } from "react-router-dom";
 import { createBrowserRouter, NavLink, RouterProvider } from "react-router-dom";
 import { FaCartShopping } from "react-icons/fa6";
+import { useSelector } from "react-redux";
 
 // gsap.registerPlugin(ScrollTrigger);
 const Navi = ({ text, itemCount, setCartItems }) => {
   const [open, setOpen] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   // const [login, setLogin] = useState(false);
-
+  const { error, loading, isAuthenticated } = useSelector(
+    (state) => state.user
+  );
   const toggleMenu = () => {
     setOpen(!open);
   };
@@ -56,7 +59,7 @@ const Navi = ({ text, itemCount, setCartItems }) => {
               <h1 className="  heading font-semibold"> Product </h1>
             </NavLink>
 
-            <NavLink to="/login" activeClassName="active" className="Navbar">
+          {!isAuthenticated?  <NavLink to="/login" activeClassName="active" className="Navbar">
               <div
                 className={`flex justify-center font-semibold items-center cursor-pointer gap-2 `}
               >
@@ -64,18 +67,20 @@ const Navi = ({ text, itemCount, setCartItems }) => {
                 {/* <div className={` transition-all duration-300 rotate-[180deg] ease-linear `}><FaAngleDown /></div> */}
               </div>
             </NavLink>
-
-            {/* onClick={clickHandleLogin} className={`flex font-semibold justify-center items-center cursor-pointer gap-2 ${login ? "" : " text-white"} `} */}
-
-            <div className=" flex items-center gap-4  justify-items-end">
-              <Link to="/profile">
+            :
+            <Link to="/profile">
                 <div>
                   <div className="heading text-3xl  hover:text-darkYellow cursor-pointer">
                     {" "}
                     <CgProfile />
                   </div>
                 </div>
-              </Link>
+              </Link>}
+
+            {/* onClick={clickHandleLogin} className={`flex font-semibold justify-center items-center cursor-pointer gap-2 ${login ? "" : " text-white"} `} */}
+
+            <div className=" flex items-center gap-4  justify-items-end">
+             
 
               <Link to="/cart">
                 <div className=" flex items-center justify-center">
@@ -83,7 +88,7 @@ const Navi = ({ text, itemCount, setCartItems }) => {
                     <FaCartShopping />
                   </div>
 
-                  {/* <div className=" -translate-x-2 text-[red] font-bold text-xl -translate-y-2">{itemCount}</div> */}
+                  <div className=" -translate-x-2 text-darkYellow font-bold text-l -translate-y-3.5">{itemCount}</div>
 
                   <div className=" block lg:hidden md:hidden sm:hidden"></div>
                 </div>

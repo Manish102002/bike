@@ -1,11 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import { ThreeDots } from 'react-loader-spinner';
+import { Provider } from 'react-redux';
 import Hero from '../Hero';
+import { store } from '../store';
+// import store from '../store';
 import loder from '/public/images/preloader.jpg';
 
 export const Loader = () => {
 
   const [loader, SetLoader] = useState(true);
+
 
   useEffect(()=>{
     setTimeout(() => {
@@ -17,7 +21,7 @@ export const Loader = () => {
 
 
   return (
-    <>
+    <Provider store = {store}>
       {/* <Sidepro/> */}
 
       {
@@ -45,7 +49,7 @@ export const Loader = () => {
         ) : <Hero />
       }
 
-    </>
+    </Provider>
   )
 }
 

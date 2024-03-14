@@ -2,10 +2,18 @@ import Navi from "../Header/Navi"
 import React, { useEffect } from 'react';
 import ScrollReveal from 'scrollreveal';
 import cartimg1 from '/public/img1.jpg';
+import { login, logout } from "../../actions/userAction";
+import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router";
 
 const Profile = () => {
 
-
+  const dispatch =useDispatch();
+  const navigate = useNavigate();
+const handleLogout=()=>{
+  dispatch(logout())
+  navigate(-1);
+}
   useEffect(()=>{
     const timeout = setTimeout(() => {
       ScrollReveal().reveal(".nametop", {
@@ -75,7 +83,7 @@ const Profile = () => {
               <p className="text-xl w-60 p-2 border border-darkYellow rounded-md">Hidden content here...</p>
             </details>
 
-            <h1 className="nameright w-60  mt-10 text-black bg-darkYellow opacity-45 cursor-pointer font-semibold text-xl p-2 border border-darkYellow rounded-md">LogOut</h1>
+            <h1 onClick={handleLogout} className="nameright w-60  mt-10 text-black bg-darkYellow opacity-45 cursor-pointer font-semibold text-xl p-2 border border-darkYellow rounded-md">LogOut</h1>
           </div>
         </div>
       </div>
